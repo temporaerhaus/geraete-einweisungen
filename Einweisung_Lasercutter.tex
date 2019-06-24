@@ -9,7 +9,7 @@
 % TeX-Pakete
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\basedir}{fablab-document}
-\documentclass{\basedir/fablab-document}
+\documentclass{\basedir/vsh-document}
 
 % \usepackage{fancybox} %ovale Boxen für Knöpfe - nicht mehr benötigt
 \usepackage{amssymb} % Symbole für Knöpfe
@@ -26,7 +26,7 @@
 \renewcommand{\texteuro}{\euro}
 
 \linespread{1.2}
-\fancyfoot[L]{kontakt@fablab.fau.de}
+\fancyfoot[L]{TODO Kontakt}
 \title{Einweisung Lasercutter}
 
 \tikzstyle{laserknopf} = [anchor=base, draw=black, fill=gray!10, rectangle, rounded corners, inner sep=2pt, outer sep = 3pt]
@@ -110,7 +110,7 @@ minimum height=2em]
 \begin{document}
 	\maketitle
 	
-	Diese Einweisung erklärt die Lasercutter LTT iLaser 4000 (seit Sept. 2018 im FAU FabLab) und Epilog Zing (kleiner, Vorgänger, aus Platzmangel normalerweise nicht im FabLab).
+	Diese Einweisung erklärt den Lasercutter Epilog Zing.
 	
 	\section{Was du dir merken musst}
 	Den Inhalt dieses Kapitels musst du wissen, alles andere kannst du bei Bedarf nachlesen.
@@ -118,26 +118,22 @@ minimum height=2em]
 	\begin{itemize}
 		\item Nur zweifelsfrei geeignete Materialien verwenden, die in der Liste (auf den nächsten Seiten) stehen. Keine unbekannten Materialien. Besonders keine Materialien die giftige Gase entwickeln können, wie zum Beispiel PVC, Teflon, etc.
 		\item Ebenfalls nicht erlaubt sind leichtentzündliche oder gefährliche Dinge, wie z.B. Feuer\-zeuge (außer diese wurden noch nie befüllt). Wenn das Gehäuse nicht aus Metall ist, muss bei Handys der Akku herausgenommen werden.
-		\item Solange der Laser arbeitet, muss immer eine Person \emph{direkt} beim Lasercutter sein und zusehen. \footnote{Bei vollständig unbrennbaren Materialien wie Stein, Metall oder Glas (keinesfalls bei Plexiglas!) dürfen Betreuer für besonders lange Aufträge eine Ausnahme erlauben, wenn vorher alle brennbaren Reste aus dem Schneidetisch entleert wurden.}
-		\item Alle Arbeiten erfolgen eigenverantwortlich und auf eigenes Risiko. Das FabLab haftet nicht für Beschädigungen, auch nicht wenn dein schickes Handy beim Gravieren kaputt geht.
+		\item Solange der Laser arbeitet, muss immer eine Person \emph{direkt} beim Lasercutter sein und \emph{zusehen}.
+		\item Alle Arbeiten erfolgen eigenverantwortlich und auf eigenes Risiko. Das Verschwörhaus haftet nicht für Beschädigungen, auch nicht wenn dein schickes Handy beim Gravieren kaputt geht.
 		\item Nichts schrauben, nichts verstellen. Einzige Ausnahme sind die grünen Schrauben des Schneidetischs. % Betätigen der grünen Schrauben ist nötig, um den Schneidetisch zu reinigen! Deshalb kann man es nicht ganz verbieten.
 		\item Das Wabengitter ist empfindlich, daher: Nicht darauf abstützen und nichts schweres darauf stellen!
-		\item Im Brandfall nur mit CO\subscript{2}-Löscher, niemals mit Pulver-, Schaum- oder Wasserlöscher löschen (Verschmutzung, Stromschlaggefahr)! Der Feuerlöscher steht gegenüber vom Lasercutter beim Kassenterminal.
-		\item Keine Magnete in den Bauraum oder in die Nähe des Lasercutters bringen. (\nurLTT Einzige erlaubte Ausnahme ist die in der Gravureinheit enthaltene Magnethalterung. Mit dieser ist besondere Vorsicht erforderlich, damit nicht die magnetischen Positionsgeber (Lineardecoder) an den Achsen beschädigt werden.)
-		\item \nurLTT Sofortiges Abschalten des Lasercutters geht nur mit dem Not-Aus-Schalter. \laserLTTPause fährt die nächsten Linien noch zu Ende. Dies braucht aber seine Zeit und funktioniert manchmal nicht.
-		\item \nurZing Es gibt hier keinen Not-Aus-Schalter! \laserZingStop  fährt die aktuelle Linie noch zu Ende. Sofortiges Abschalten des Lasercutters geht nur über den Kippschalter rechts unten am Gerät.
+		\item Im Brandfall nur mit CO\subscript{2}-Löscher, niemals mit Pulver-, Schaum- oder Wasserlöscher löschen (Verschmutzung, Stromschlaggefahr)! Der Feuerlöscher steht direkt beim Lasercutter.
+		\item Keine Magnete in den Bauraum oder in die Nähe des Lasercutters bringen.
+		\item Es gibt keinen Not-Aus-Schalter! \laserZingStop  fährt die aktuelle Linie noch zu Ende. Sofortiges Abschalten des Lasercutters geht nur über den Kippschalter rechts unten am Gerät.
 		\item Sicherstellen, dass der Laserkopf sich in seiner Ebene komplett frei bewegen kann, ohne gegen Hindernisse (z.\,B. gegen das Material) zu stoßen.
 		\item Wenn der Laserkopf gegen etwas stößt, sofort Not-Aus betätigen und Betreuer informieren. Das Gerät muss außer Betrieb genommen werden (Netzstecker ziehen, Hinweiszettel anbringen) bis alle Achsen überprüft wurden ($\rightarrow$ S. \pageref{sec:wartung-ltt:kollision}). \emph{Auf keinen Fall vorher zum Test wieder einschalten}, weil dadurch hoher Sachschaden entstehen kann.
-		\item \nurLTT Beim Autofokus immer auf den höchsten Punkt des Werkstücks fokussieren. (Es gibt nur etwa 4mm Sicherheitsabstand, bei größerem Fehler kommt es zu einer Kollision.)
-		\item \nurLTT Für den Windows-Treiber sind unbedingt die Hinweise in Abschnitt \ref{sec:ltt-windows} zu beachten.
 	\end{itemize}
 	
 	% Messing ist nicht verboten, auch wenn es nicht geht, denn dieser Laser hat einen Schutz gegen Reflektionen (Aussage des Zing-Technikers, auf explizite Frage, was passiert, wenn ich den Strahl 100% spiegle und in den Laser zurückwerfe, ähnliche-Aussage des LTT-Vertrieblers)
 	\subsection{Bei kleineren Flammen}
 	Eine \emph{kleinere} Flamme am Laserpunkt und leichter Geruch kann manchmal auftreten:
 	\begin{itemize}
-		\item Zum Pausieren \laserLTTPause (\nurZing \laserZingStop) drücken. Bis zum Anhalten kann es unter Umständen lange dauern, da der Lasercutter erst noch die nächsten Linien zu Ende fährt!
-		\nurLTT Manchmal reagiert der Laser auch garnicht nicht auf Pause, als hätte er den Tastendruck nicht mitbekommen, auch wenn es später die Möglichkeit zur Pause gäbe. \todo{Unklar, wann und wieso.}
+		\item Zum Pausieren \laserZingStop drücken. Bis zum Anhalten kann es unter Umständen lange dauern, da der Lasercutter erst noch die nächsten Linien zu Ende fährt!
 		\item Sicherstellen, dass die Absaugung angeschaltet ist und Air Assist (Druckluft bei der Linse) an ist.
 		\item Bei manchem Material lässt es sich nicht vermeiden und dann ist es auch nicht weiter schlimm.
 	\end{itemize}
@@ -146,10 +142,9 @@ minimum height=2em]
 	Bei \emph{größeren} Flammen oder starker Rauchentwicklung muss das Lasern \emph{sofort} unterbrochen werden, da sonst die Linse beschädigt wird:
 	\begin{itemize}
 		\item \textbf{Deckel leicht öffnen} (Laser wird ausgeschaltet, der Antrieb fährt jedoch weiter).\\
-		\nurLTT Oder auch den Not-Aus betätigen.
 		\item \textbf{Betreuer rufen}
-		\item Letzer Ausweg ist das Löschen mit dem CO\subscript{2}-Löscher in kurzen Sprühstößen. Ein Feuerlöscher befindet sich beim Kassenterminal gleich gegenüber vom Lasercutter, sowie am Durchgang zur Elektrowerkstatt.
-		\item Bei weiterer Eskalation die Feuerwehr rufen, anwesende Personen warnen und mit allen den Raum verlassen --- Erstickungsgefahr durch CO\subscript{2} und durch Rauch!
+		\item Letzter Ausweg ist das Löschen mit dem CO\subscript{2}-Löscher in kurzen Sprühstößen. Ein 2-kg-CO\subscript{2}-Feuerlöscher befindet sich direkt neben dem Lasercutter – \emph{vor Beginn der Laserarbeiten prüfen, dass der Löscher griffbereit steht!}
+		\item Bei weiterer Eskalation die Feuerwehr rufen: Mit dem Handdruckmelder neben der Türe zum Treppenhaus 7/10 oder bei der Stahltüre zum Salon die Brandmeldeanlage auslösen; hiermit wird a) die Feuerwehr alarmiert und b) der Räumungsalarm für das gesamte Gebäude aktiviert. \emph{Falls möglich} kann mit dem 6-kg-CO\subscript{2}-Löscher beim Datenschrank im Salon oder (zur Not) mit dem 6-kg-Schaumlöscher unter dem Handdruckmelder beim Treppenhaus 7/10 noch ein weiterer Löschversuch unternommen werden – im Zweifel geht Eigenschutz jedoch immer vor! Alle nicht mit dem Löschversuch befassten Menschen räumen das Gebäude und suchen die Sammelplätze vor dem Haus auf.
 	\end{itemize}
 	
 	
@@ -181,7 +176,7 @@ minimum height=2em]
 		\itemCheck dünne Lackschichten auf Metall (außer Teflonbeschichtung)
 		\itemCheck erlaubte Kunststoffe: Acrylglas (PMMA), PET (Overheadfolie, Bayer Vivak), Moosgummi (EVA-Schaum), POM (Polyoxymethylen, Delrin)
 		\itemCheck Papier, Pappe, Holz (auch Sperrholz, MDF, HDF und ähnliche Werkstoffe nur aus Holz und Leim)
-		\itemCheck \enquote{trockene} Nahrungsmittel, soweit bekannt, wie zum Beispiel Äpfel (nur gravieren), Butterkeks ohne Schokolade, Brezen, ...
+		\itemCheck \enquote{trockene} Nahrungsmittel, soweit bekannt, wie zum Beispiel Äpfel (nur gravieren), Butterkeks ohne Schokolade, Brezeln, ...
 		\itemCheck PE Polyethylen / PP Polypropylen: Schaumstoffe gehen gut, Platten schlecht laserbar aber trotzdem erlaubt
 		\itemCheck PS Polystyrol bis 1mm Dicke
 		\itemCheck PC Polycarbonat bis 1mm Dicke
@@ -241,7 +236,7 @@ minimum height=2em]
 	Dieses Vorgehen könnte in Zukunft einfacher werden, wenn ein Visicut-Plugin für Corel oder Illustrator fertigentwickelt wird. Wenn du daran mit entwickeln möchtest, um das Vorgehen genauso einfach zu machen wie bei Inkscape, melde dich bei uns.
 	
 	\subsection{Corel Draw, Adobe Illustrator, sonstiges + Windows-Druckertreiber} \label{sec:einstellungen-windowstreiber}
-	Als Seitengröße müssen die Maße des Schneidtisches gewählt werden (1000 $\times$ 600~mm / \nurZing 609\,$\times$\,304~mm), da sonst Probleme auftreten können.
+	Als Seitengröße müssen die Maße des Schneidtisches gewählt werden (609\,$\times$\,304~mm), da sonst Probleme auftreten können.
 	
 	\textbf{Vektor (Schneiden)}: Zu schneidende Linien auf eine Linienbreite von höchstens 0,001 inch stellen (Inkscape: 0,1 px, Corel Draw: Haarline, Adobe Illustrator: 0,1 px, Vectorworks: 0,03 mm). Bei fertigen Zeichnungen aus dem Internet ist Vorsicht geboten, manchmal sind hinter gefüllten Flächen solche dünnen Linien versteckt, die dann durchgeschnitten werden.
 	
@@ -249,7 +244,6 @@ minimum height=2em]
 	
 	Beim Speichern einen aussagekräftigen Namen wählen, da dieser später auf dem Display erscheint.
 	
-	Corel: Auf dem Rechner ws11 sind unter Nutzer fufablab08 passende Standartwerte konfiguriert.
 	
 	\section{Job senden}
 	
@@ -269,9 +263,7 @@ minimum height=2em]
 	
 	\textbf{Fokus}: Damit VisiCut den Fokus anpassen kann, muss es wissen wo anfangs der Fokus steht. Das Setzen des Fokus am Lasercutter wird später noch beschrieben (\cref{fokus}).
 	
-	\nurLTT Ändern des Fokus wird in Visicut noch nicht unterstützt. Der Fokus wird immer auf die Material-Oberseite gesetzt, dazu einfach den Autofokus ausführen.
-	
-	\nurZing  Normalerweise wird am Lasercutter der Fokus auf die Oberseite des Materials gesetzt, und dazu passend in VisiCut der Haken rechts bei \enquote{Fokus ist anfangs auf der Grundplatte...} \textbf{nicht} gesetzt.
+	Normalerweise wird am Lasercutter der Fokus auf die Oberseite des Materials gesetzt, und dazu passend in VisiCut der Haken rechts bei \enquote{Fokus ist anfangs auf der Grundplatte...} \textbf{nicht} gesetzt.
 	
 	\textbf{Mapping (Zuordnung)}: Im Bereich Mapping kann man auswählen, wie entschieden werden soll, was geschnitten, graviert und markiert wird. Die Unterscheidung kann nach verschiedenen Kriterien erfolgen; standardmäßig wird nach Farbe entschieden: \enquote{schneide rot, graviere Rest, ignoriere blau, markiere grün}.
 	
@@ -279,7 +271,7 @@ minimum height=2em]
 	
 	\textbf{Laser Einstellungen}: Im Bereich Laser Einstellungen können die Lasereinstellungen überprüft und verstellt werden. Überprüfe vor Allem wenn es sich um ausgefallenere Materialien handelt, ob hier sinnvolle Einstellungen stehen. Oft ist es so, dass die Standardeinstellungen (Power: 0, Speed: 100, Fokus 0) gesetzt sind da diese noch nicht angepasst wurden). \textbf{Speichere deine Veränderungen nur, wenn sie auch für andere Benutzer sinnvoll sind.} Experimente bitte nicht abspeichern, sondern einfach nur den Auftrag abschicken ohne auf Speichern zu klicken.
 	
-	\button{Berechnen}: Dadurch wird die benötigte Zeit im Vorraus berechnet. Dies ist allerdings nur ein Richtwert und kann von der tatsächlichen Dauer abweichen. \nurLTT Wird momentan nicht unterstützt.
+	\button{Berechnen}: Dadurch wird die benötigte Zeit im Vorraus berechnet. Dies ist allerdings nur ein Richtwert und kann von der tatsächlichen Dauer abweichen.
 	
 	\button{Ausführen}: Dies schickt den Auftrag an den Lasercutter. Wenn eine Erfolgsmeldung erscheint, kann der Auftrag im Laser gestartet werden.
 	
@@ -287,49 +279,35 @@ minimum height=2em]
 	
 	Die aktuell verwendet Konfiguration für VisiCut kannst du beim ersten Start oder unter \verb|Optionen| / \verb|empfohlene Einstellungen herunterladen...| herunterladen. (Sie ist unter \url{https://github.com/fau-fablab/visicut-settings} in das git Repo eingecheckt. Änderungen müssen dorthin gepusht werden. Im FabLab werden auf dem Linux-Rechner ws01 die Einstellungen gemeinsam weiterentwickelt und von dort aus ab und zu nach github veröffentlicht. Funktionierende Änderungen daher bitte auf ws01 abspeichern.)
 	
-	VisiCut ist Open Source und wird gemeinschaftlich weiterentwickelt. Wenn du Fehler findest und diese nachvollziehbar beschreiben kannst, freuen wir uns über einen Bericht an \href{mailto:kontakt@fablab.fau.de}{kontakt@fablab.fau.de} oder noch besser direkt auf github unter \url{https://github.com/t-oster/visicut/issues}.
+	VisiCut ist Open Source und wird gemeinschaftlich weiterentwickelt. Wenn du Fehler findest und diese nachvollziehbar beschreiben kannst, freuen wir uns über einen Bericht direkt auf github unter \url{https://github.com/t-oster/visicut/issues}.
 	
-	\subsubsection{Kamera} \label{kamera}
-
-	Mit VisiCut kann man seine Vektorzeichnung auf einem Bild des eingelegten Materials platzieren. Dazu wird von einer Kamera, die an der Klappe des Lasercutters angebracht ist, ein Bild geschossen, das anhand der 4 Passermarken an den 4 Ecken der Arbeitsfläche des Lasers ausgerichtet und beschnitten wird. So können die Teile, die gelasert werden sollen, je nach Kalibrierung bis auf etwa 2mm genau am Bild ausgerichtet werden, was vor Allem bei Reststücken nützlich ist. Das Bild wird automatisch aktualisiert, es funktioniert nur wenn der Laserdeckel aufgeklappt ist.
+%	\subsubsection{Kamera} \label{kamera}
+%
+%	Mit VisiCut kann man seine Vektorzeichnung auf einem Bild des eingelegten Materials platzieren. Dazu wird von einer Kamera, die an der Klappe des Lasercutters angebracht ist, ein Bild geschossen, das anhand der 4 Passermarken an den 4 Ecken der Arbeitsfläche des Lasers ausgerichtet und beschnitten wird. So können die Teile, die gelasert werden sollen, je nach Kalibrierung bis auf etwa 2mm genau am Bild ausgerichtet werden, was vor Allem bei Reststücken nützlich ist. Das Bild wird automatisch aktualisiert, es funktioniert nur wenn der Laserdeckel aufgeklappt ist.
+%	
+%	\nurLTT Es ist zu beachten, dass die Kamera noch ziemlich ungenau ist, 5-10mm Unsicherheit sind möglich! Für eine sehr genaue Ausrichtung richte dich besser nach den Linealen am Rand des Wabengitters und in VisiCut.
+%	
+%	\nurZing Vor dem Lasern ist noch zu beachten, dass der Laserkopf in den Nullpunkt des Lasercutters (links oben) zurückgefahren ist. Dazu drückt man am Laser die Taste \laserZingXyAus und danach \laserZingReset. Nach dem Start ist der Laserkopf automatisch im Maschinennullpunkt.
 	
-	\nurLTT Es ist zu beachten, dass die Kamera noch ziemlich ungenau ist, 5-10mm Unsicherheit sind möglich! Für eine sehr genaue Ausrichtung richte dich besser nach den Linealen am Rand des Wabengitters und in VisiCut.
 	
-	\nurZing Vor dem Lasern ist noch zu beachten, dass der Laserkopf in den Nullpunkt des Lasercutters (links oben) zurückgefahren ist. Dazu drückt man am Laser die Taste \laserZingXyAus und danach \laserZingReset. Nach dem Start ist der Laserkopf automatisch im Maschinennullpunkt.
-	
-	
-	\subsubsection{Fehlerbehebung}
-	Sollte dies nicht funktionieren, könnten folgende Punkte hilfreich sein:
-	
-	%TODO Tabelle schön machen
-	
-	\begin{tabularx}{\textwidth}{|X|X|X|}
-		\hline
-		Problem		 										& mögliche Ursache															& mögliche Lösung \\ \hline \hline
-		\multirow{3}{0.333\textwidth}{Das Bild wird nicht aktualisiert}	& Es wurden trotz mehrmaligen Versuchens nicht alle Passermarken erkannt	& Deckel ganz öffnen. Vergewissere dich, dass keine Marke überdeckt ist, sondern alle von der Kammera gut erkannt werden können. Eventuell ist die Kamera verdreht. \\ \cline{2-3}
-		& Die Lichtverhältnisse sind zu schlecht, als dass der Kontrast zw. den weißen und schwarzen Stellen groß genug für die Mustererkennung wäre	& Schalte die Deckenbeleuchtung an oder aus\\ \cline{2-3}
-		& VisiCam läuft nicht														& Frage einen Betreuer, dass er den Dienst auf der ws01 startet \\ \hline
-		\multirow{2}{0.333\textwidth}{Der Laser schneidet nicht da, \\ wo er sollte}	& \nurZing War der Laser in seinem Nullpunkt und nicht links oben auf der Arbeitsfläche?	& \nurZing drücke am Laser \laserZingXyAus und \laserZingReset \\ \cline{2-3}
-		& VisiCam ist verkalibriert &	Wenn du nicht an Rechner ws01 sitzt, lade aktuellere Einstellungen herunter (Optionen - empfohlene Einstellungen - Erlangen). Wenn das nichts bringt, muss auf ws01 das Kalibrierungsprogramm in VisiCut durchgeführt und dann die Einstellungen veröffentlicht werden (Betreuer/Admins fragen).  \\ \hline
-		
-	\end{tabularx}
+%	\subsubsection{Fehlerbehebung}
+%	Sollte dies nicht funktionieren, könnten folgende Punkte hilfreich sein:
+%	
+%	%TODO Tabelle schön machen
+%	
+%	\begin{tabularx}{\textwidth}{|X|X|X|}
+%		\hline
+%		Problem		 										& mögliche Ursache															& mögliche Lösung \\ \hline \hline
+%		\multirow{3}{0.333\textwidth}{Das Bild wird nicht aktualisiert}	& Es wurden trotz mehrmaligen Versuchens nicht alle Passermarken erkannt	& Deckel ganz öffnen. Vergewissere dich, dass keine Marke überdeckt ist, sondern alle von der Kammera gut erkannt werden können. Eventuell ist die Kamera verdreht. \\ \cline{2-3}
+%		& Die Lichtverhältnisse sind zu schlecht, als dass der Kontrast zw. den weißen und schwarzen Stellen groß genug für die Mustererkennung wäre	& Schalte die Deckenbeleuchtung an oder aus\\ \cline{2-3}
+%		& VisiCam läuft nicht														& Frage einen Betreuer, dass er den Dienst auf der ws01 startet \\ \hline
+%		\multirow{2}{0.333\textwidth}{Der Laser schneidet nicht da, \\ wo er sollte}	& \nurZing War der Laser in seinem Nullpunkt und nicht links oben auf der Arbeitsfläche?	& \nurZing drücke am Laser \laserZingXyAus und \laserZingReset \\ \cline{2-3}
+%		& VisiCam ist verkalibriert &	Wenn du nicht an Rechner ws01 sitzt, lade aktuellere Einstellungen herunter (Optionen - empfohlene Einstellungen - Erlangen). Wenn das nichts bringt, muss auf ws01 das Kalibrierungsprogramm in VisiCut durchgeführt und dann die Einstellungen veröffentlicht werden (Betreuer/Admins fragen).  \\ \hline
+%		
+%	\end{tabularx}
 	
 	
 	\subsection{Windows-Druckertreiber}
-	
-	\subsubsection{LTT iLaser}\label{sec:ltt-windows}
-	Neben Visicut gibt es auch die kompliziertere Möglichkeit, den Lasercutter über einen Windows-Druckertreiber anzusprechen. Wenn möglich, verwende lieber Visicut.
-	
-	
-	Achtung: Der Treiber darf nur von Rechner ws11 und nur mit fufablab08 Nutzer verwendet werden!
-	
-	Achtung: Nie zwei Leute/Fenster gleichzeitig bearbeiten, da sonst die Einstellungen überschrieben werden! \\
-	Geladene Einstellungen überprüfen - bedenke dass ein falsch gesetzter Fokus Ärger bereiten kann. \\
-	Scheiden = 0,03 mm rot (RGB) (0,1 funktioniert nur manchmal!)
-	
-	\todo{...}
-	
-	\subsubsection{Epilog Zing}
 	
 	Neben Visicut gibt es auch die Möglichkeit, den Lasercutter über einen Windows-Druckertreiber (Epilog Engraver Win32 Zing) anzusprechen.
 	
@@ -337,7 +315,7 @@ minimum height=2em]
 	
 	Die Datei mit Adobe Reader bzw.\  Corel Draw öffnen, die Freigabe ist unter Computer$\rightarrow$Z:\textbackslash \ zu finden. Bei Datei$\rightarrow$Drucken \textit{Epilog Engraver} auswählen und in den Druckereinstellungen alles auf das aktuelle Material einstellen - wenn die Materialeinstellung bei Power auf 0 steht, frage einfach einen Betreuer:
 	
-	\textbf{Erprobte Einstellungen} können unter Erweitert geladen werden. Gute Startwerte findest du auch im Wiki (\url{http://fablab.fau.de/wiki/technik/lasercutter}). Bitte schreibe bei neuen Materialien auf, was du gewählt hast (auch die dpi-Einstellung), und ob die Werte gut funktioniert haben. Gut funktionierende Werte bitte unter aussagekräftigem Namen abspeichern, nicht funktionierende Voreinstellungen notieren und evtl.\  löschen.
+	\textbf{Erprobte Einstellungen} können unter Erweitert geladen werden. Gute Startwerte findest du auch im Wiki (\url{https://wiki.verschwoerhaus.de/lasercutter}). Bitte schreibe bei neuen Materialien auf, was du gewählt hast (auch die dpi-Einstellung), und ob die Werte gut funktioniert haben. Gut funktionierende Werte bitte unter aussagekräftigem Namen abspeichern, nicht funktionierende Voreinstellungen notieren und evtl.\  löschen.
 	
 	\textbf{Modus}: \textbf{Raster} graviert alles, das keine Haarlinie ist. \textbf{Vektor} schneidet alle Haarlinien. \textbf{Kombiniert} macht beides nacheinander.
 	
@@ -391,37 +369,13 @@ minimum height=2em]
 	
 	(An den Stellen, an denen der Laser auf das Gitter trifft, gibt es beim Schneiden Reflexionen, die z.B. bei durchsichtigem Acryl störende kleine Macken an Schnittkanten erzeugen können. Um dies zu umgehen, kann man Abstandshalter unterlegen, muss dann aber aufpassen dass diese richtig platziert sind und nicht brennen.)
 	
-	\subsection{Bezahlung}
-	\label{sec:bezahlung}
-	% Bild ist obsolet:
-	% \begin{wrapfigure}{r}{8cm}
-	%   \vspace{-20pt} %WORKAROUND: Nicht so viel leerer weißer Platz
-	%   \includegraphics{./img/bezahlung-flaeche.pdf}
-	%   \vspace{-20pt} %WORKAROUND: Nicht so viel leerer weißer Platz
-	% \end{wrapfigure}
-	Das Material wird nach ganzen, halben (längs/quer) und viertel Platten abgerechnet. Angefangene, bereits bezahlte Platten aus der Resteschublade kosten nichts. Zusätzlich kostet die Maschinen\-zeit noch, um die Wartung der Laser\-röhre (ca. \EUR{3000} alle 5 Jahre!), den Austausch des Absaugungsfilters sowie sonstige Reparaturen und die Abschreibung zu finan\-zieren.
-	Die Preise sind im Kassenterminal oder auch online (\url{https://brain.fablab.fau.de/build/pricelist/price_list-Laser.html}) verfügbar.
-	
 	\subsection{Fokus} \label{fokus}
 	Der Laserstrahl wird durch die Linse im Schlitten auf einen bestimmen Punkt fokussiert. Damit das Material richtig geschnitten wird, muss der Tisch auf den richtigen Abstand zur Linse gebracht werden.
 	
 	Vergewissere Dich, dass der Laser bereits eingeschaltet und an die Nullposition (hinten rechts) gefahren ist.
 	Öffne den Glasdeckel des Lasers.
-	Lege Dein Material vorsichtig auf den Wabentisch und richte es aus. Der Wabentisch ist sehr empfindlich. Stütze Dich nicht darauf ab und lege keine schweren Materialien auf den Tisch. Achte immer darauf den Autofokus zu nutzen.
+	Lege Dein Material vorsichtig auf den Wabentisch und richte es aus. Der Wabentisch ist sehr empfindlich. Stütze Dich nicht darauf ab und lege keine schweren Materialien auf den Tisch. 
 	
-	\subsubsection{\nurLTT}
-	\textbf{Achte zu jeder Zeit darauf, dass sich der Laserkopf in seiner Ebene frei bewegen kann, ohne dabei gegen irgendwas zu stoßen!} Fahre den Tisch mit der Taste \laserKnopf{Table $\downarrow$} weit genug herunter, sodass sich der Laserkopf frei bewegen kann und nicht seitlich gegen das Material stößt. Du kannst den Laserkopf jetzt mit den Richtungstasten bewegen (rund um die Haus-Taste). Um den Laserkopf sehr schnell zu bewegen, gibt es auch die Tasten P1 (Position hinten rechts) oder P2 (Position mitte Lasertisch).
-	
-	Bewege den Laserkopf so, dass der Fokusstift (rechts am Laserkopf) über der höchsten Stelle des Materials steht. \textbf{Vorsicht bei unebenem Material:} Wähle unbedingt die höchste Stelle -- wenn das Material woanders mehr als ca. 3mm höher ist, wird es später zu einer Kollision kommen, weil der Laserkopf am Material hängen bleibt!
-	
-	Drücke nun die Taste \laserKnopf{Fokus (Lupe)}. Der Laser fragt auf dem Display nun: \laserDisplay{Are you sure? Yes / No}. Bestätige mit
-	\laserLTTOkay. Der Laser beginnt nun mit dem Fokussierungsvorgang. Bleibe mit der Hand an der Notaustaste, damit du gleich anhalten kannst, wenn etwas nicht in Ordnung ist und der Laser in den Tisch rumpelt. Der Laser fährt nun mit dem Fokusstift bis zum Material und dann wieder hoch.
-	
-	Wenn alles richtig ist, steht der Fokusstift jetzt etwa 5 Millimeter über dem Material und kann sich in der Ebene frei bewegen, ohne gegen irgendwas zu stoßen.
-	
-	\textbf{Sollte der Laser ausgeschaltet werden (auch Not-Aus) und dann in einer Position stehen, bei der Laserkopf nicht in der (XY-)Ebene frei bewegt werden kann, wende dich an einen Betreuer, dass vor erneutem Einschalten der Tisch per Hand heruntergefahren wird. Auf keinen Fall den Laser vorher einschalten, denn er fährt dann automatisch in die Home-Position!}
-	
-	\subsubsection{\nurZing} \label{fokus-zing}
 	Am Linsenschlitten ist eine Pendelfeder angebracht, mit der der richtige Abstand zur Brennebene gemessen werden kann. Dort wo das Pendel im herunter geklappten Zustand endet, ist der Laserstrahl fokusiert.
 	
 	Dazu muss man \laserFocus drücken, das Pendel herunter klappen und dann die gewünschte Höhe mit \laserPfeilRauf/\laserPfeilRunter einstellen. Wenn man den Fokus an einem speziellen Punkt setzen möchte, kann man auch \laserZingXyAus wählen und dann den Kopf an diese Stelle schieben. Abschließen kann man den Vorgang mit \laserZingReset.
@@ -444,30 +398,21 @@ minimum height=2em]
 	\subsection{Absaugung}
 	\label{sec:absaugung}
 	% Die Absaugung sollte in diesem Dokument nur Absaugung, nicht "Gebläse" oder "Lüftung" genannt zu werden, um Verwechslungen mit Air Assist zu vermeiden.
-	
-	\nurLTT Die Absaugung mit Filter ist gegen Flammenbildung, Rauch und unangenehmen Geruch, und geht automatisch zusammen mit dem Lasercutter an. Du kannst also hier nichts falsch machen. (Sie besteht aus zwei Teilen: Die Lasercutter-Absaugung wird mit dem Drehschalter vorne am Lasercutter aktiviert und pustet die Dreckluft vom Lasercutter in das Lüftungsrohr. Eine Steuerleitung aktiviert wiederum auch die Decken-Absaugung, die aus dem Lüftungsrohr absaugt und zum Dach hinauspustet. Dass die Decken-Absaugung aktiv ist, sieht man an grünem Licht am Steuerkästchen in der Ecke des Raumes, in der das Lüftungsrohr in die Decke mündet.)
-	
-	\nurZing Je nach Aufstellungsort wird eine externe Absauganlage verwendet, die vorher angeschaltet werden muss.
+		
+	Unter dem Lasercutter ist eine Umluft-Filterabsaugung vorhanden. Sie wird mit dem Hauptschalter links im Bedienpanel auf der Vorderseite angeschaltet und ist dann hörbar aktiv. Es sollte nur die grüne LED mit dem Haken leuchten. Mit dem schwarzen „Compressor“-Wippschalter wird Air Assist (siehe nächster Abschnitt) angeschaltet. Dieser Schalter sollte immer auf On stehen.
 	
 	%Mit der Fernbedienung kann man die Absaugung schalten (\lueftungOn/\lueftungOff) und die Geschwindigkeit festlegen (Prozentwert eingeben und \lueftungEnter  drücken bzw. \lueftungPlus/\lueftungMinus  verwenden). Für stark rauchende Materialien wie Sperrholz sollten höhere Geschwindigkeiten verwendet werden. Um die Absaugung zu verbessern, empfiehlt es sich, größere freie Flächen des Schneidetischs abzudecken.
 	
 	\subsection{Air Assist}
 	\label{sec:air-assist}
-	Da besonders bei Acryl auch mit Absaugung öfters Flammen entstehen, sind im Arm Ausströmer für Druckluft verbaut, die entstehende brennbare Dämpfe wegpusten, bevor sich eine Flamme bildet. Der Air Assist wird normalerweise automatisch mit dem Lasercutter mit angeschaltet. 
+	Da besonders bei Acryl auch mit Absaugung öfters Flammen entstehen, sind im Arm Ausströmer für Druckluft verbaut, die entstehende brennbare Dämpfe wegpusten, bevor sich eine Flamme bildet. Der Air Assist wird normalerweise automatisch mit der Absauganlage mit angeschaltet. 
 	
-	Optimale Einstellung für den Druckminderer sind etwas unter 2\,bar. Dies ist normalerweise bereits korrekt eingestellt und darf nicht durch den Nutzer verändert werden.
-	
-	\nurZing Der Air Assist kann über einen Schalter deaktiviert werden, dann geht als Warnung automatisch auch das Licht im Lasercutter mit aus. \textbf{Für Acryl, Sperrholz und ähnliches ist der Air Assist unbedingt notwendig! Wenn er ausgeschaltet wurde (Licht im Laser aus), muss er nach dem Lasern sofort wieder eingeschaltet werden!}
-	
-	\nurZing Je nach Aufstellungsort wird ein externer Kompressor verwendet, der vorher angeschaltet werden muss.
+	Der Air Assist kann über den Compressor-Schalter an der Absauganlage deaktiviert werden. \textbf{Für Acryl, Sperrholz und ähnliches ist der Air Assist unbedingt notwendig! Wenn er ausgeschaltet wurde, muss er nach dem Lasern sofort wieder eingeschaltet werden!}
 	
 	\subsection{Nullpunkt} \label{nullpunkt}
-	\subsubsection{\nurLTT}
-	Standardmäßig wird der Maschinennullpunkt verwendet: Die linke obere Ecke des Tisches entspricht der linken oberen Ecke der Seite und passt zum Kamera-Bild in Visicut.
-	
-	Es kann auch ein temporärer Nullpunkt gesetzt werden. (VisiCut: noch nicht unterstützt, Windowstreiber: \todo{}).
-	
-	\subsubsection{\nurZing}
+
+  Im Normalfall ist der Nullpunkt fest auf die (0,0)-Koordinate des Laserbetts eingestellt und es sind keine weiteren Maßnahmen mehr nötig.
+
 	Bei der Nullpunktfestlegung ist besondere Vorsicht erforderlich! Wird der Nullpunkt falsch festgelegt, kann es vorkommen, dass der Lasercutter beim Ausführen des Jobs dann gegen die Begrenzung fährt und beschädigt wird. Entsprechend der Einstellung bei der Mittelpunkt-Definition muss hier der Startpunkt auf dem Material festgelegt werden.
 	
 	Wenn er nicht bereits angeschaltet ist, den roten Laserpunkt mit \laserRoterLaser  anschalten.
@@ -476,56 +421,36 @@ minimum height=2em]
 	
 	Die Position des Nullpunkts überprüfen und mit \laserZingStart  bestätigen. Das Display zeigt \laserDisplay{Set Home/Center} (Nullpunkt gesetzt).
 	
-	Anstatt den Nullpunkt selber zu wählen, kann man auch den Maschinennullpunkt (linke obere Ecke des Tisches) verwenden. Dazu drückt man \laserZingReset anstatt Start, der Lasercutter sucht dann den Nullpunkt und fährt anschließend den Arm aus dem Weg. Für VisiCam ist das das präferierte Vorgehen (siehe Kapitel \ref{kamera})
+	Anstatt den Nullpunkt selber zu wählen, kann man auch den Maschinennullpunkt (linke obere Ecke des Tisches) verwenden. Dazu drückt man \laserZingReset anstatt Start, der Lasercutter sucht dann den Nullpunkt und fährt anschließend den Arm aus dem Weg.
 	
 	%TODO Aufschreiben: zu Maschinennullpunkt Ausmessen, in der Datei genau so hinschieben,... etc
 	
 	\subsection{Job laden}
-	\subsubsection{\nurLTT}
-	Der Laser wechselt nicht automatisch auf den neuesten Auftrag, du musst diesen erst auswählen.
-	
-	Wähle dazu im Display \laserLTTExit~ \laserDisplay{$\textcolor{gray}{\blacksquare}$ 1. WORK DISPLAY} \laserLTTOkay. Sende deine Datei und wähle diese im Display mit den Tasten \laserLTTPreviousJob und \laserLTTNextJob aus. Die zuletzt gesendete Datei hat die höchste Nummer, bereits ausgeführte Aufträge sind mit \texttt{*} markiert.
-	
-	\subsubsection{\nurZing}
+
 	Mit \laserJob zeigt man Dateiname und laufende Nummer des aktuellen Druckauftrags an. Bei angeschalteter Mittelpunkt-Definiton wird zusätzlich \texttt{*} hinter dem Dateinamen angezeigt. Wenn der neue Auftrag nicht im Display steht, \laserZingReset drücken. Eventuell musst du auch erst etwas warten.
 	
 	Die Data-Leuchte muss ausgegangen sein, bevor man startet. Ansonsten sind die Daten noch nicht vollständig übertragen.
 	
 	\subsection{Ausführen}
-	Wenn du dir unsicher bist, den Deckel öffnen, um einen Testlauf ohne Laser durchzuführen. (Lasercutter fährt den Pfad ab, doch er lasert nicht) Man sollte sich dabei nicht davon verunsichern lassen, dass der Laser beim Gravieren bis zu 3,5cm (\nurZing: etwa 5\,cm) links und rechts über das Gebiet hinausfährt, um abzubremsen und wieder in die andere Richtung zu beschleunigen.
 	
-	\subsubsection{\nurLTT}
-	Start des Auftrags mit der Grünen Taste {Bild Grüne Taste}.
-	
-	Wenn der Lasercutter Unfug macht, im Zweifelsfall den Not-Aus-Schalter betätigen.
-	
-	\textbf{\underline{Bei brennbaren Materialien immer beim Lasercutter bleiben!}} Wenn der Auftrag abgeschlossen ist, piept der Lasercutter und zeigt die Laufzeit an.
-	
-	Falls der Laser nicht mehr weiter lasern soll, öffne den Glasdeckel des Lasers etwas. Der Laser fährt dann weiter. Bei Gefahr drücke die Notaustaste und rufe einen Betreuer.
-	
-	Wenn keine Eile besteht, kannst du den Auftrag auch pausieren, das braucht aber etwas und funktioniert manchmal nicht: Drücke 1x fest auf die Taste \laserLTTPause und warte ab. Manchmal fährt der Laser wieder in die Homeposition. Manchmal auch nicht. Im zweiten Fall ist es besser, Du wartest weiter ab.
-	Ist der Laser an seine Homeposition gefahren, musst Du nun noch die Taste {Bild Stop} drücken, damit der augenblickliche Auftrag zurückgesetzt wird. Jetzt ist der Laserauftrag abgebrochen.	
-	
-	\subsubsection{\nurZing}
 	Zum Starten auf \laserZingStart drücken (Finger weg aus dem Verfahrbereich des Laserarms!).
+
+	Wenn du dir unsicher bist, den Deckel öffnen, um einen Testlauf ohne Laser durchzuführen. (Lasercutter fährt den Pfad ab, doch er lasert nicht) Man sollte sich dabei nicht davon verunsichern lassen, dass der Laser beim Gravieren bis etwa 5\,cm links und rechts über das Gebiet hinausfährt, um abzubremsen und wieder in die andere Richtung zu beschleunigen.
 	
 	Bei Druck auf \laserZingStop hält er am Ende der aktuellen Linie an. Dann muss man zuerst warten, bis der Lasercutter stehen bleibt. Erst sobald er wieder steht darf man entweder mit \laserZingStart fortsetzen oder mit \laserZingReset  den Auftrag abbrechen und zum Startpunkt zurückkehren. \textbf{Achtung: Wenn man nicht wartet bis der Laser steht und vorher etwas anderes drückt, kann es zu unkontrollierten Bewegungen kommen!}
-	
+
 	Wenn der Anfang des Testlaufs gut aussieht, \laserZingStop, \laserZingReset, Klappe schließen und mit \laserZingStart  den Auftrag starten. \textbf{\underline{Bei brennbaren Materialien immer beim Lasercutter bleiben!}} Wenn der Auftrag abgeschlossen ist, piept der Lasercutter und zeigt die Laufzeit an.
+
+	Falls der Laser nicht mehr weiter lasern soll, öffne den Glasdeckel des Lasers etwas. Der Laser fährt dann weiter. Bei Gefahr drücke die Stopptaste und rufe einen Betreuer.
+
 	
 	\section{Fertigstellen}
-	\subsection{Bezahlung}
-	Am Display wird die Laufzeit angezeigt. Geld für Laufzeit und Material wie in~\ref{sec:bezahlung} beschrieben am Kassenterminal zahlen.
-	
 	\subsection{Aufräumen}
 	\begin{itemize}
 		\item Werkstück und Reste aus dem Bauraum entfernen.
 		\item Werkzeug und Materialreste aufräumen, nicht beim Laser herumliegen lassen.
 		\item Wenn mehr als eine Handvoll Reste im Schneidetisch liegen, diesen ausleeren: 
-		
-		\nurLTT Deckel und vordere Tür des Lasercutters öffnen. Schublade aus dem Schneidetisch herausziehen und entleeren. Schublade wieder einschieben.
-		
-		\nurZing Schneidetisch einfach herausnehmen (dazu müssen keine Schrauben gelöst werden). Vorderklappe des Schneidetischs entfernen (grüne Rändelschrauben lösen) und den Schneidetisch entleeren. Dann den Schneidetisch wieder zusammenbauen und so in den Lasercutter einsetzen, dass er fest sitzt.
+		Schneidetisch einfach herausnehmen (dazu müssen keine Schrauben gelöst werden). Vorderklappe des Schneidetischs entfernen (grüne Rändelschrauben lösen) und den Schneidetisch entleeren. Dann den Schneidetisch wieder zusammenbauen und so in den Lasercutter einsetzen, dass er fest sitzt.
 		\item Vor dem Ausschalten des Lasers gegebenfalls die Lüftung etwas nachlaufen lassen.
 	\end{itemize}
 	
@@ -595,7 +520,7 @@ minimum height=2em]
 	\section{Stempel herstellen}
 	\label{stempel}
 	Mit dem Lasercutter lassen sich auch gut Stempel herstellen.
-	Dafür gibt es im FabLab speziellen Stempelgummi.
+	Dafür gibt es im Verschwörhaus speziellen Stempelgummi.
 	Dieser lässt sich mit dem Laser tief gravieren und ausschneiden.
 	
 	Eine genaue Anleitung dazu gibt es unter \url{https://fablab.fau.de/project/stempel}.
@@ -647,41 +572,15 @@ minimum height=2em]
 	Der Schneidtisch läuft auf 4 Gewindestangen. Diese müssen von Zeit zu Zeit gereinigt werden. Dazu saugt man den Innenraum und die Stangen ab und wischt mit einem alten Lappen nach. Wichtig ist, dass an den Lagern sich keine Staubklumpen sammeln. Auf die staubfreien Stangen gibt man wenige Tropfen Öl.
 	%TODO Skizze der Filteranlage
 	\subsubsection{Filtermatte wechseln}
-	Für den Holzkasten-Filter wird eine Filtermatte F5 auf 50x66cm zurecht geschnitten.
-	Wechsel: seitliche Verschlüsse öffnen, Deckel abnehmen, Filtermatte entfernen, neue Matte mit flauschiger Seite nach oben einlegen, Kasten schließen.
-	
-	Dieser Filter ersetzt die folgenden Unterkapitel. (Diese werden nur noch für den Messebetrieb benötigt.)
-	\subsubsection{Grobfilter wechseln}
-	Der Grobstaubfilter ist die Tasche auf der linken Seite. Im neuen Zustand ist er weiß. Gewechselt werden muss der Filter, sobald die Anlage wegen zu geringem Durchsatz abschaltet. Dann ist der Filter meist braun.
-	
-	Der Filter ist mit einem eingesteckten Gummistutzen an der Rückwand befestigt. Dieser kann einfach durch leichtes Hin und Her drehen abgezogen werden. Wichtig ist beim Wechsel nicht auf den Filter zu drücken, um ein unnötiges Stauben zu vermeiden. Sobald der Filter ausgebaut ist, schraubt man die Rohrschelle auf und trennt den Stoffteil zur Entsorgung ab. Auf das schwarze Kunststoffstück wird eine neue Tasche aufgezogen und mit der Rohrschelle befestigt.
-	
-	Zum Schluss wird der Filter wieder eingesteckt. Ein Grobfilterwechsel sollte zusammen mit dem Stand der Lüftungslaufzeit im Laserlogbuch vermerkt werden. (siehe Wiki-Seite des Lasers)
-	\subsubsection{HEPA-Filter wechseln}
-	\label{subsubsec:HEPA-Filter}
-	Der Feinstaubfilter besteht aus zwei Teilen. Der obere mit Klammern befestigte Teil ist der HEPA-Filter. Der Verband aus beiden Filtern kann durch Herunterklappen des weißen Hebels und Herausziehen des schwarzen Kastens aus der Anlage entfernt werden.
-	Der HEPA-Filter muss nur sehr selten gewechselt werden. Dies erkennt man daran, dass die Lamellen sehr \enquote{pelzig} aussehen. \emph{Achtung! Die Lamellen sind sehr empfindlich und dürfen nicht berührt werden.}
-	Ein Wechsel des HEPA-Filters muss im Laserlogbuch zusammen mit dem Stand der Anlagenlaufzeit notiert werden.
-	\subsubsection{Aktiv-Kohle-Filter wechseln}
-	Der Aktiv-Kohle-Filter ist der schwarze Kasten unter dem HEPA-Filter. Zum Ausbau siehe den Abschnitt \ref{subsubsec:HEPA-Filter}.
-	
-	Zunächst sollte man nach dem Ausbau die untere Gummidichtung überprüfen. Diese schließt den Filter luftdicht ab und verschleißt von Zeit zu Zeit. Defekte Stellen sollten heraus geschnitten werden und durch neues P-Klebeband von Tesa Moll ersetzt werden. Dieses Band lässt sich über unser Teilesystem finden. Dabei sollten zwei Bänder so nebeneinander geklebt werden, dass sich ein Hohlraum zwischen zwei Wülsten bilden kann.
-	
-	Bei schlechter Filterleistung (Geruchsbildung) ist es oft ausreichend, die Aktivkohle neu aufzuschütteln. Danach kann es vorkommen, dass die Lüftung etwas Staub spuckt, also erstmal draußen betreiben.
-	
-	Wenn dies nichts bringt, muss die Aktivkohle gewechselt werden. Dazu entfernt man das schwarze Klebeband am oberen Rand des Filters. Dieses sollte man aufheben, da es wieder verwendet werden kann. Für die weiteren Schritte sollte nach Außen gegangen werden. Zunächst entfernt man den Deckel, welcher mit vier Ausstülpungen des Grundteiles befestigt ist. Jetzt werden die Aktiv-Kohle und die zwei Filtermatten entsorgt. Achtung! Dies staubt massiv. Den Staub nicht einatmen!
-	
-	Abschließend legt man eine Filtermatte in den Boden, gibt die Aktiv-Kohle darauf und legt eine Filtermatte in den Deckel. Den Deckel wieder festdrücken und mit Klebeband luftdicht verschließen. Eventuelle Lücken werden mit weiterem Klebeband gedichtet. Nun montiert man den HEPA-Filter und schiebt die Einheit wieder in die Absauganlage.
-	Ein Wechsel des Aktiv-Kohle-Filters muss im Laserlogbuch zusammen mit dem Stand der Anlagenlaufzeit notiert werden.
-	\subsubsection{Neue Grobfilter nähen}
-	Das Material für die Filter kann bei Großhändlern quadratmeterweise bestellt werden. Das Schnittmuster gibt es im Netzlaufwerk. Beim Nähen ist es wichtig auf eine dichte Naht (Stiche nah beieinander, eventuell Overlock) zu achten. Außerdem muss man aufpassen, dass die Öffnung groß genug für den Gummistutzen ist.
+  (Diese Anleitung ist noch nicht fertig)
+
 	\subsection{Lasergitter reinigen}
 	Durch verbrannte Holz und Acrylreste verfärbt sich das Metallgitter des Lasertisches immer weiter. Ab einem gewissen Grad färbt dieser Schmutz ab. Wenn dies eintritt muss das Gitter gereinigt werden.
 	\begin{itemize}
-		\item Gitter herausnehmen (mit Rahmen) und am Waschbecken bereit legen. Backofenreiniger und Heißluftpistole hohlen.
+		\item Gitter herausnehmen (mit Rahmen) und in den Innenhof bringen. Backofenreiniger und Heißluftpistole holen.
 		\item Mit der Heißluftpistole das Gitter gut aufheizen. (Richtig heiß machen, jedoch nicht so heiß, dass der Lack sich ablöst!)
 		\item Backofenspray schütteln und gleichmäßig von allen Seiten auftragen.
-		\item Mit der Heißluftpistole weiter aufheizen. Achtung! Geruchsentwicklung! Absaugung des Raumes laufen lassen.
+		\item Mit der Heißluftpistole weiter aufheizen. Achtung! Geruchsentwicklung! Fenster zu den Räumen geschlossen halten
 		\item Gegebenenfalls Prozedur wiederholen.
 		\item Mit viel Wasser und wenig Sauerei ausspülen.
 		\item Zwischen den Gitterblechen kann mit einem Pfeifenreiniger oder einem Tuch gewischt werden. Achtung! Das Blech lässt sich leicht verbiegen.
@@ -696,7 +595,7 @@ minimum height=2em]
 		\item Abwischen der Laufflächen des Schlittens (das Profil und die Rollen mit einem weichen Lappen reinigen)
 		\item Prüfen der Riemenspannung von X- und Y-Achse
 		\item Reinigen der Linse und Überprüfen auf Defekte
-		\item Reinigen des Innenraums mit Breff Eingebrannte oder mit Industriereiniger
+		\item Reinigen des Innenraums mit Bref Eingebrannte oder mit Industriereiniger
 		\item Reinigen und Abrichten des Gittertisches
 		\item Wartung der Z-Mechanik
 		\item Warten der Filtereinheit
@@ -713,7 +612,7 @@ minimum height=2em]
 	\label{sec:fehler-allgemein}
 	In diesem Abschnitt geht es um die Beseitigung häufiger Fehler. Wenn das Werkstück fehlgeschlagen ist, werden die Laserzeitkosten des Fehlschlags in der Regel erlassen. Material muss weiterhin bezahlt werden.
 	
-	Hinweise speziell für LTT bzw. Zing Lasercutter finden sich in den nachfolgenden Abschnitten. Ebenso Hinweise zur Wartung für Betreuer.
+	Hinweise speziell für den Zing Lasercutter finden sich in den nachfolgenden Abschnitten. Ebenso Hinweise zur Wartung für BetreuerInnen.
 	
 	\subsection{Windowstreiber}
 	\subsubsection{Objekt wird nicht geschnitten, sondern graviert}
@@ -728,168 +627,7 @@ minimum height=2em]
 		\item PDFs werden beim Exportieren manchmal gerastert bzw. kaputtgemacht. Keinen PDF-Export aus Corel verwenden!
 	\end{itemize}
 	
-	\section{\nurLTT Fehlerbehebung - nur für Betreuer}
-	In diesem Abschnitt geht es um die Beseitigung häufiger Fehler speziell beim LTT Laser.
-	Informationen zur Wartung und ernsthaften Problemen siehe Abschnitt \ref{sec:wartung-ltt}.
-	
-	
-	\subsection{Unerwünschte Gravur am Rand}
-	Wenn rechts und links von einer Gravur auch dunkle Stellen graviert werden, ist die \enquote{Tickle Power} zu hoch eingestellt. Das ist die Leistung, die bei ausgeschaltetem Laser zum \enquote{Vorglühen} der Laserröhre verwendet wird. In Rücksprache mit dem Hersteller sollte diese dann verringert werden. (Stand Dezember 2018: Frequenz von 20 auf 18 kHz verringert).
-	
-	Zu hohe Tickle Power führt auch dafür, dass bei ausgeschaltetem Laser trotzdem Linien auf das Material markiert werden.
-	
-	
-	\section{\nurLTT Wartung - nur für Betreuer}
-	\label{sec:wartung-ltt}
-	\textbf{Achtung! Mache folgendes nur, wenn du wirklich Ahnung hast -- Fehler können teuer werden!}
-
-	Die Achsen sind: X links-rechts, Y vor-hinter, Z für den Tisch.
-	
-	\subsection{Handbücher des Herstellers}
-	Normale Reinigung der Optik und Mechanik siehe Benutzerhandbuch des Herstellers. Problembehandlung siehe Wartungshandbuch des Herstellers. Beides liegt auf der Dateifreigabe unter Fablab / Geräte / Laser.
-	
-	\todo{...}
-	
-	\subsection{wöchentlich: Führungen putzen}
-	Die X-Achse hat 3 Laufrollen - 1 oben und 2 unten. Die zwei Y-Achsen haben jeweils 2 Rollen. Die Rollen laufen in Führungsrillen in einem Aluprofil.
-	
-	Alle Rollen mit weichem Tuch abwischen. Es darf kein Alkohol o.ä. verwendet werden, dieser macht die Rollen spröde.
-	
-	Alle Führungsrillen (am Laserkopf oben und unten, Y ganz links, Y ganz rechts) mit Tuch und ggf. Spiritus abwischen. Es darf kein Spiritus an die Rollen gelangen!
-	
-	\subsection{wöchentlich: Optik putzen}
-	
-	Linsen reinigen:
-	\begin{itemize}
-		\item Am Linsenwagen die Schrauben vorne an den Ecken (grün makriert) herausschrauben.
-		\item (frisches) Wattestäbchen in Linsenreiniger tunken und mit leichter rückwärts Rollbewegung die Linse putzen. Mit dreckiger Seite nicht erneut über die Linse gehen, lieber ein neues Wattestäbchen nehmen.
-		\item Linse vorsichtig mit Druckluft trocknen und wieder installieren. Die gekrümmte Seite der Linse sollte oben sein, also darauf achten, den Linseneinsatz richtig herum einzusetzten (richtige Orientierung ist mit einem Aufkleber beschriftet).
-	\end{itemize}
-
-	Spiegel reinigen:
-	\begin{itemize}
-		\item Spiegel 5 (Spiegel im Linsenwagen)
-		\begin{itemize}
-			\item 	Anleitung dazu ist im Wartungshandbuch in der Freigabe unter: Dateifreigabe / 1\_fablab / 1\_Geraete / Laser / Anleitung Novograv (LTT) iLaser 4000 / Wartungshandbuch\_iLaser\_05:2018/
-			\item 	Wartungshandbuch hier falsch: der Spiegel kann nicht herausgezogen werden, deshalb statdessen den Spiegel vorsichtig mit Wattestäbchen und Linsenreiniger ähnlich der Linse durch die seitliche Öffnung reinigen.
-		\end{itemize}
-		\item Spiegel 4 (Am Ende der Schiene, auf der der Linsenwagen fährt): Nach gleicher Methode mit Wattestäbchen und Linsenreiniger
-		\item Spiegel 3 und Linse daneben: Nach gleicher Methode mit Wattestäbchen und Linsenreiniger
-	\end{itemize}
-
-\textbf{Nach der Wartung kontrollieren, dass KEINE GEGENSTÄNDE im Laser liegen, BEVOR man ihn anschaltet, sonst Kollisionsgefahr!}
-	
-	Nur wenn erforderlich:
-	
-	Spiegel 1 und 2 kontrollieren und säubern:
-	\begin{itemize}
-		\item Stecker ziehen!
-		\item Seitenklappe unten mit Schlüssel aus der Betreuerschublade öffnen
-		\item Nach Wartungshandbuch Kapitel 4.6 (S. 16) vorgehen: Abdeckung laut Wartungshandbuch öffnen und kontrollieren ob Spiegel und Einkoppelspiegel sauber sind, NICHT verstellen.
-	\end{itemize}
-
-	
-\subsection{wöchentlich: Ansauglüfter der Laser-Elektronik säubern}
-	Der Lasercutter hat vier Ansaugfilter - zwei unten, zwei hinten. Staubsauger auf niedrigste Stufe stellen und mit etwas Abstand (!) die Filter aussaugen. Es besteht die Gefahr, dass man versehentlich den Filter einsaugt - ein Reservefilter (G2 Grobfilter, Amazon) findet sich im Gehäuse des Lasercutters unten.
-	
-	Normalerweise reicht das. Wenn man trotzdem von innen an die Filter und Lüfter rankommen will:
-	\begin{itemize}
-		\item Stecker ziehen!
-		\item Seitenklappe unten mit Schlüssel aus der Betreuerschublade öffnen
-		\item Lüfterfilter reinigen, wenn sich diese zusetzten verdreckt der Laser auch unten beschleunigt, da er sich dreckige Luft zum kühlen einzieht.
-	\end{itemize}
-	
-\subsection{ab und zu: Riemenspannung / zittriges Schnittbild}
-	Zu schwache Riemenspannung führt dazu, das das Schnittbild zittrig wird. Außerdem kann dann bei Crash einer der der Y-Riemen durchrutschen, sodass die X-Achse dann schief läuft. Zu starke Riemenspannung hingegen führt zu überhöhtem Verschleiß und letztlich einem gerissenen Riemen.
-	
-	Zum Prüfen der Riemenspannung immer in die Mitte der Arbeitsfläche fahren (P2).
-	
-	\paragraph{Korrekte Riemenspannung der Y-Achse (links und rechts):} Bei mäßigem Druck (ca. 2\,kg) gegen die Y-Achse links/rechts (nahe an den Laufrollen mit denen sie an der Führung läuft, nicht zuweit oben in Z) soll sie sich um nicht mehr als ca 1mm bewegen.
-	
-	\paragraph{Korrekte Riemenspannung der X-Achse:} Wenn man lange genug im Wartungshandbuch sucht, findet man folgende Angabe: Der X-Riemen ist richtig gespannt, wenn er sich \enquote{in der Achsmitte ca. 1-1,5 cm von der Achse wegziehen lässt}. Nicht Übermäßig fest spannen. Y-Riemen muss 10 \% mehr Spannung haben als der X-Riemen.
-
-\subsection{Laserleistung prüfen (bei Bedarf)}
-3mm Acryl XT ohne Schutzfolie sollte bei Speed 10-11, Power 100, gerade noch durchgeschnitten werden (fällt von selber oder mit sehr leichtem Klopfen noch raus). Dies soll in allen Ecken des Lasercutters der Fall sein (meist ist es unten rechts um 1 Speed-Einheit schlechter). Ein Vergleichsmuster liegt in der Kiste mit Wartungsmaterial.
-
-Ein Stück Acryl 3mm XT (XT hat bessere Dickentoleranzen als GS, XT ist an blauer Schutzfolie zu erkennen) einlegen und Autofokus ausführen.
-
-Zum Testen wird VisiCut gestartet und ein spezielles LaserScript geladen, das Rechtecke mit verschiedenen Geschwindigkeiten schneidet: Datei \pfeil Beispiele \pfeil vordefiniert \pfeil LaserScript \pfeil Speedtest. Bei den Abfragen dann Maximum Speed 13, Minimum Speed 7, Step 1 eingeben und auf \enquote{Acryl, alles cut} stellen. Wenn beim Senden nochmal die Abfrage nach Speed-Werten kommt, erneut die vorherigen Werte eingeben.
-
-
-
-
-\subsection{Ausrichtung der Optik prüfen (bei schlechter Leistung, obwohl sonst alles stimmt)}
-Ziel ist, dass die Position des Laserstrahls an jedem einzelnen Spiegeln gleich bleibt, egal wie man die X- und Y-Achse bewegt. Toleranz entlang Y-Achse: Bei über 0,5mm sollte man nachjustieren, besser ist deutlich weniger. Toleranz entlang X ggf. etwas größer.
-
-Wenn die Ausrichtung nicht stimmt, kann das auch an einer falsch ausgerichteten X-Achse liegen! Siehe Notizen im nächsten Abschnitt zum Thema Kollision.
-
-Es gibt ein Fadenkreuz, das an die Position der Linse eingesetzt wird. Dieses wird aus Kassenzettelpapier ausgelasert. Die Datei liegt in fablab-data/Maschinen/Novograv (LTT) iLaser 4000/. Die Position des Laserpunkts darauf sollte sich nicht mehr als ca. 2mm verändern, besser deutlich weniger. Mittigkeit des Laserpunkts sollte unter ca. 3mm sein, besser deutlich weniger.
-
-Alles weitere steht im Wartungshandbuch.
-
-\subsection{Vorgehen nach (vermutlicher) Kollision} \label{sec:wartung-ltt:kollision}
-	Obacht, diese Aufzählung ist vereinfacht und sollte noch verbessert und detailliert werden. Bitte unbedingt auch die jeweiligen Abschnitte des Wartungshandbuchs lesen!
-
-Siehe auch die Fotos unter fablab-data/Maschinen/Novograv (LTT) iLaser 4000/Fotos Wartung 2019-04-11/ .
-
-	\begin{itemize}
-		\item Netzstecker (Kaltgerätekabel) ziehen!
-		\item Z-Achse prüfen: Sollte der Laser ausgeschaltet werden (auch Not-Aus) und dann in einer Position stehen, bei der Laserkopf nicht in der (XY-)Ebene frei bewegt werden kann, den Tisch vorher per Hand herunterfahren: Netzstecker ziehen (Kaltgerätekabel rechts an Laser), Wartungsklappe vorne unten mit Schlüssel öffnen, durch Schieben des Zahnriemens den Tisch hoch/runter bewegen. Ein Hinweiszettel am Boden des Gehäuses zeigt die nötige Bewegungsrichtung für das Herunterfahren des Tisches.
-		\item Fokusstift prüfen: Muss frei herunterfallen, wenn man ihn hochhebt, und darf nicht krumm o.\,ä. sein. Etwas Spiel der Fokusstifthalterung ist normal, diese ist relativ lose am Laserwagen befestigt.
-		\item Rollen X/Y prüfen: 7 Rollen (2 links an linker Y-Achse, 2 rechts an rechter Y-Achse, 2 oben an X, 1 unten an X) müssen jeweils in der V-Nut im Aluprofil laufen. Siehe Bilder im Wartungshandbuch unter \enquote{5.1 Ausrichten der Achsen - Vorbereitende Maßnahmen}. Das ist nicht einfach zu sehen, man braucht normalerweise Lampe und Spiegel/Handykamera dafür.
-		
-		Wenn das nicht in Ordnung, ist die Achse ausgehängt und muss erst wieder eingehängt werden. Wenn dies nicht durch leichtes Wackeln von selber passiert, muss sie dazu teilweise demontiert werden. Siehe Wartungshandbuch unter \enquote{9. X-Achse ausgehängt}.
-		\item Die Rollen dürfen nicht frei in der Luft drehen, sondern sollen auf der Nut aufliegen. Das prüft man durch vorsichtiges Drehen mit der Hand. Richtig ist es, wenn sie sich nicht frei drehen lassen ohne dass sich der Wagen bewegt, bzw. man erst etwas kräftiger drehen muss bis sie merklich durchrutschen. 	Bei allen Rollen einer Achse soll das ungefähr gleich sein.
-		
-		Wenn sich eine der Y-Rollen frei dreht, dann ziemlich sicher die Ausrichtung der Achsen falsch. Bei der X-Achse kann sich die Rolle eigentlich nur dann frei drehen, wenn der Wagen nicht richtig eingehängt ist.
-		
-
-		\item An diesem Punkt sollten die Achsen zumindest näherungsweise rechtwinklig zueinander sein (grob mit Geodreieck/Augenmaß schätzen), zumindest nicht merklich zueinander verdreht.
-		\item Die Lichtschranken der X- und Y-Achse prüfen. Zunächst sicherstellen, dass diese festgeschraubt und nicht lose oder abgebrochen sind. Dann von Hand die X-/Y-Achsen dort hin verschieben und sicherstellen, dass das \enquote{Fähnchen} mittig in die Lichtschranke ragt. Beide Lichtschranken sitzen rechts hinten, die zweite etwas versteckt unterhalb der ersten. Siehe Wartungshandbuch unter \enquote{10. Sensoren der Parkposition prüfen}.
-		\item Laser wieder einschalten, prüfen dass Referenzfahrt beim Einschalten funktioniert.
-		\item Riemenspannung prüfen. (siehe vorher). Wenn diese nicht passt, sollte sie vor/während der Justierung der Rechtwinkligkeit korrigiert werden.
-		\item Rechtwinkligkeit der Achsen prüfen: Das ist leider zur Zeit ein relativ hoher Aufwand, weil die Z-Begrenzung verstellt werden muss. Durch eine andere Konstruktion der Unterlegteile (siehe später) könnte man das umgehen. Hier der aktuelle Stand.
-		
-		Die Lineale am Wabentisch oder der Grundplatte gelten \emph{nicht} als Referenz, sie können schief zur Achse sein. (Dies ist im Wartungshandbuch falsch beschrieben!) Das einzige was gilt sind die bei etwa Y=54.2mm auf der Grundplatte (unter dem Wabentisch) eingeritzten Linien. Diese wurden vom Service genau achsparallel eingeritzt, genau senkrecht zur linken Y-Achse, welche als Referenz dient.
-		
-		Man kann aber den Tisch nicht weit genug hochfahren, um zu testen ob der Laser zu dieser Linie passt, weil wir die Z-Achse so begrenzen, dass bei eingebautem Wabentisch man mit dem Fokusstift nicht viel tiefer als der Wabentisch fahren kann. Also muss man zunächst die Begrenzung der Z-Achse temporär entfernen, weil wir direkt auf der unteren Tischplatte \enquote{lasern} wollen. Dazu mal wieder Netzstecker ziehen, Wartungsklappe unten aufmachen, Fähnchen der Z-Achse mit 3mm Inbus aufschrauben und abnehmen, Wartungsklappe wieder zu. Strom an.
-		
-		Der rote Laserpointer soll beim Verfahren in X-Richtung auf der Referenzmarkierung von ganz links bis ganz rechts genau auf der Markierung bleiben und nicht nach vorne oder hinten wegwandern (Toleranz ca 0.5mm). Wenn das nicht so ist, stimmt entweder die Optik-Ausrichtung oder die Achsausrichtung oder beides nicht.
-		
-		\item Wenn die Prüfung nicht gut ausfällt, Rechtwinkligkeit der Achsen korrigieren:
-		
-		Achtung, das im Wartungshandbuch unter \enquote{5.2 Rechtwinkligkeit der X- und Y-Achsen} beschriebene Vorgehen ist problematisch - es funktioniert nur wenn die Optik hunderprozentig korrekt ausgerichtet und das Lineal achsparallel ist, und die Optik kann man nur ausrichten, wenn die Achse bereits korrekt ausgerichtet wurde. Da beißt sich die Katze also in den Schwanz.
-		
-		Besser ist es, rein mechanisch die Rechtwinkligkeit der Achse zu justieren. Benötigt werden hierzu ein rechtwinkliges Alublech (Ein entsprechend beschriftetes lagert in der E-Werkstatt unter dem Plotter-PC-Bildschirm), zwei ca. 40mm dicke Unterlegwinkel (\todo{noch zu fertigen, siehe Fotos fablab-data/Maschinen/Novograv (LTT) iLaser 4000/Fotos Wartung 2019-04-11/ } und \url{https://cad.onshape.com/documents/bccee6264ce702916cd9ce98/w/eebe4988cdecfe89ec7acab5} ), sowie ein ebenso dicker Unterlegklotz.
-		
-		Gerät ausschalten. Vorgehen wie im Wartungshandbuch unter 5.2 beschrieben, aber die Rechtwinkligkeit nicht anhand des Laserpunkts, sondern nach der folgenden Art bestimmen: Klemmkupplung zwischen linker und rechter Y-Achse lösen. Das Aluprofil der linken Y-Achse dient als Referenz. An dieses wird das rechtwinklige Alublech angelegt und dann gegen die X-Achse geschoben, sodass sich diese passend rechtwinklig schiebt. Damit die Verbindung der X- und Y-Achse dem Blech nicht im Weg ist, werden dabei Unterlegwinkel vor die X-Achse gelegt, und der X-Riemen wird in das Aluprofil der Achse \enquote{hineingestopft}. (siehe Fotos fablab-data/Maschinen/Novograv (LTT) iLaser 4000/Fotos Wartung 2019-04-11/ ). 
-		
-		\item Nun die Z-Begrenzung wieder auf vorherigen Bereich: Tisch auf ungefähr die Höhe der vorherigen Z-Begrenzung fahren, wieder Netzstecker ziehen, Z-Begrenzung wieder einbauen: blauer Strich = Oberkante Fähnchen, sicherstellen dass das Fähnchen mittig in die Lichtschranke passt. (Die Höhe der Begrenzung ist knapp unter der Wabentisch-Höhe gewählt, dass man beim Fokussieren nicht tief im Wabentisch steckenbleiben kann, aber noch problemlos ein dünnes Blatt Papier fokussieren kann.)
-		
-		Wartungsklappe zu und Strom an.
-		
-		\item Jetzt passt wieder alles.
-	\end{itemize}
-
-\subsection{Fokus-Abstand ändern (sollte nie nötig sein)}
-	Es sollte nie nötig sein, den Fokus-Abstand nachzukalibrieren, außer am Lasersystem wird grundlegend etwas geändert (z.\,B. anderer Linsentyp).
-	
-	Der Linsenhalter hat drei \glqq Stockwerke\grqq, je 0.5 Zoll (12.5mm) voneinander entfernt. Um etwas mehr Sicherheitsabstand zwischen Fokusstift und Material zu haben als ursprünglich vom Hersteller vorgesehen, nutzen wir eine 3-Zoll-Linse im oberen Halter. Theoretisch könnte man stattdessen auch die 2-Zoll-Linse im unteren einbauen, doch dafür ist das Loch in der \glqq Düse\grqq (Kegel) zu eng und der Strahl würde beschnitten.
-	
-	Verkleinert man den Parameter \glqq focusoffset\grqq in der Firmware (i4000adv.cfg), erhöht das den Abstand, den der Laser nach dem Fokussieren hochfährt. Bedeutung: in Zoll, kleinerer Wert = größerer Abstand! Dafür die auf der CF-Karte liegende Datei bearbeiten und Laser wieder einschalten. Der Wert von focusoffset ist speziell auf die 3-Zoll-Linse angepasst. Die 2-Zoll-Linse ist nun nicht mehr nutzbar (außer man fokussiert von Hand ca 8 mm näher als der Autofokus).
-	
-	Durch die 3-Zoll-Linse ist die nutzbare Leistung etwas geringer (Acryl 3mm XT ohne Schutzfolie gerade so durchschneiden: Speed 12 mit 3 Zoll statt 14 mit 2 Zoll).
-	
-	Mögliche Verbesserung für die Zukunft: 2-Zoll-Linse in unteren Halter einbauen, Fokusoffset neu kalibrieren, das braucht aber eine modifizierte \glqq Düse\grqq (Kegel) da sonst der Strahl abgeschnitten wird
-	
-
-	
-	\section{\nurLTT Experimentell}
-	In diesem Abschnitt geht es um die Rotationseinheit. Diese darf nur bei ausgeschaltenem Gerät eingebaut werden. Die Verwendung der Rotationseinheit ist nur mit Betreuer zulässig und derzeit funktioniert die Einheit nur mit CoralDraw.
-	Weitere Sonderfunktionen wie Stempel und Fokus verstellen, frage bitte einen Betreuer. Diese Punkte befinden sich zur Zeit noch in der Entwicklung. 
-	\todo{}
-	
-	\section{\nurZing Fehlerbehebung}
+	\section{Fehlerbehebung}
 	In diesem Abschnitt stehen Hinweise zu häufigen Fehlern speziell für den Epilog Zing. Siehe auch \cref{sec:fehler-allgemein} für allgemeine Hinweise.
 	
 	\subsection{Windows-Druckertreiber}	
